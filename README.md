@@ -162,7 +162,7 @@ http://localhost:8080
 
 Watch the complete project demonstration here:
 
-🔗 [Demo Video](https://youtu.be/your-video-id)
+🔗 [Demo Video](https://www.linkedin.com/posts/amrutha-varshini-avvari-a081202b7_java-springboot-fullstackdevelopment-activity-7472526476010258432-QscY?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEwDo6gBo_TvIBkwcc6IUn2O0D_6-UjtuB4)
 
 ---
 
