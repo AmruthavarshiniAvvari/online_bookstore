@@ -155,6 +155,13 @@ mvn spring-boot:run
 http://localhost:8080
 ```
 
+### 6. For admin login , use 
+
+```
+Email: ammu@gmail.com 
+password: 3805
+```
+
 ---
 
 
