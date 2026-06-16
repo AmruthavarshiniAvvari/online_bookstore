@@ -1,0 +1,124 @@
+/* =========================
+   SCHOLAR / ACADEMIC THEME
+========================= */
+
+:root {
+    --bg: #f5f1e8;          /* cream background */
+    --primary: #1f2a44;     /* deep navy */
+    --accent: #c8a24a;      /* gold */
+    --text: #2c2c2c;        /* dark gray */
+    --card: #ffffff;        /* white cards */
+    --muted: #6b7280;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    background: var(--primary);
+    color: white;
+    padding: 15px 25px;
+    border-bottom: 3px solid var(--accent);
+}
+
+/* =========================
+   HEADINGS
+========================= */
+
+h1, h2, h3 {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.card, .glass-card {
+    background: var(--card);
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    padding: 20px;
+}
+
+/* =========================
+   BUTTONS (Bootstrap override)
+========================= */
+
+.btn-primary {
+    background: var(--primary);
+    border: none;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #162033;
+}
+
+.btn-success {
+    background: var(--accent);
+    border: none;
+    color: #1f2a44;
+}
+
+.btn-danger {
+    background: #b91c1c;
+    border: none;
+}
+
+/* =========================
+   TABLE
+========================= */
+
+.table {
+    background: white;
+    color: var(--text);
+}
+
+.table thead {
+    background: var(--primary);
+    color: white;
+}
+
+.table tbody tr:hover {
+    background: #f0e7d6;
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+.form-control {
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+}
+
+.form-control:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(200, 162, 74, 0.2);
+}
+
+/* =========================
+   LINKS
+========================= */
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent);
+}

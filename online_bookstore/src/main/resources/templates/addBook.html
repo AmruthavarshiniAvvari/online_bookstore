@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<head>
+
+    <title>Add Book</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-dark">
+
+    <div class="container-fluid">
+
+        <a class="navbar-brand fw-bold fs-3"
+           href="/books">
+
+            📚 Online Bookstore
+
+        </a>
+
+        <div class="d-flex gap-2">
+
+            <a href="/books"
+               class="btn btn-primary">
+
+                Books
+
+            </a>
+
+            <a href="/cart"
+               class="btn btn-success">
+
+                Cart
+
+            </a>
+
+            <form th:action="@{/logout}"
+                  method="post">
+
+                <button class="btn btn-danger">
+
+                    Logout
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<!-- ADD BOOK FORM -->
+
+<div class="container d-flex justify-content-center align-items-center py-5">
+
+    <div class="glass-card"
+         style="width:600px;">
+
+        <h1 class="text-center mb-4">
+
+            Add Book
+
+        </h1>
+
+        <form th:action="@{/save}"
+              th:object="${book}"
+              method="post">
+
+            <!-- TITLE -->
+
+            <div class="mb-3">
+
+                <label class="mb-2">
+                    Book Title
+                </label>
+
+                <input type="text"
+                       th:field="*{title}"
+                       class="form-control form-control-lg">
+
+            </div>
+
+            <!-- AUTHOR -->
+
+            <div class="mb-3">
+
+                <label class="mb-2">
+                    Author
+                </label>
+
+                <input type="text"
+                       th:field="*{author}"
+                       class="form-control form-control-lg">
+
+            </div>
+
+            <!-- CATEGORY -->
+
+            <div class="mb-3">
+
+                <label class="mb-2">
+                    Category
+                </label>
+
+                <input type="text"
+                       th:field="*{category}"
+                       class="form-control form-control-lg">
+
+            </div>
+
+            <!-- PRICE & STOCK -->
+
+            <div class="row">
+
+                <div class="col-md-6 mb-3">
+
+                    <label class="mb-2">
+                        Price
+                    </label>
+
+                    <input type="number"
+                           th:field="*{price}"
+                           class="form-control form-control-lg">
+
+                </div>
+
+                <div class="col-md-6 mb-3">
+
+                    <label class="mb-2">
+                        Stock
+                    </label>
+
+                    <input type="number"
+                           th:field="*{stock}"
+                           class="form-control form-control-lg">
+
+                </div>
+
+            </div>
+
+            <!-- BUTTON -->
+
+            <div class="d-grid mt-4">
+
+                <button type="submit"
+                        class="btn btn-primary btn-lg">
+
+                    Save Book
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
